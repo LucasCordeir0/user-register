@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 import entities.User;
+import dao.UserDao;
 
 public class Main {
 
@@ -14,6 +15,8 @@ public class Main {
 		List<User> list = new ArrayList<>();
 		
 		String name;
+		
+		UserDao dao = new UserDao();
 		
 		System.out.println("CADASTRO DE USUÁRIO");
 		do {
@@ -27,6 +30,10 @@ public class Main {
 				String cpf = sc.nextLine();
 				
 				User user = new User(id, name, cpf);
+				
+				dao.insert(user);
+				
+				System.out.println("Usuário cadastrado com sucesso!");
 				
 				list.add(user);
 				
@@ -42,6 +49,8 @@ public class Main {
 		for (User u : list) {
 		    System.out.println(u);
 		}
+		
+		
 		
 		
 		sc.close();

@@ -21,7 +21,7 @@ public class User {
 	
 	public void setId(int id) {
 		if(id <= 0) {
-			throw new IllegalArgumentException("ID is empty!");
+			throw new IllegalArgumentException("ID Está vazio!");
 		}
 		this.id = id;
 	}
@@ -33,7 +33,7 @@ public class User {
 
 	public void setName(String name) {
 		if(name == null || name.trim().isEmpty()) {
-			throw new IllegalArgumentException("Name is empty!");
+			throw new IllegalArgumentException("Name Está vazio!");
 		}
 		this.name = name;
 	}
@@ -44,7 +44,7 @@ public class User {
 	
 	public void setCpf(String cpf) {
 		if(cpf == null || cpf.trim().isEmpty()) {
-			throw new IllegalArgumentException("CPF is empty!");
+			throw new IllegalArgumentException("CPF Está vazio!");
 		}
 		this.cpf = cpf;
 	}
