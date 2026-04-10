@@ -18,7 +18,7 @@ public class Main {
 		
 		UserDao dao = new UserDao();
 		
-		System.out.println("-CADASTRO DE USUÁRIO-");
+		System.out.println("CADASTRO DE USUÁRIO");
 		do {
 			try {
 				System.out.print("ID: ");
@@ -40,7 +40,7 @@ public class Main {
 			}
 			catch (IllegalArgumentException e) {
 				System.out.println("Erro: " + e.getMessage());
-				System.out.println("Tente novamente.\n");
+				System.out.println("Tente novamente...\n");
 			}
 			
 		}
