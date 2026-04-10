@@ -14,7 +14,7 @@ public class DB {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            throw new RuntimeException("Erro ao conectar ao banco", e);
+            throw new RuntimeException("Erro ao conectar ao banco!", e);
         }
     }
 }

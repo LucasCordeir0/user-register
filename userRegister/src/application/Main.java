@@ -18,7 +18,7 @@ public class Main {
 		
 		UserDao dao = new UserDao();
 		
-		System.out.println("CADASTRO DE USUÁRIO");
+		System.out.println("-CADASTRO DE USUÁRIO-");
 		do {
 			try {
 				System.out.print("ID: ");
