@@ -22,7 +22,7 @@ public class UserDao {
             st.executeUpdate();
 
         } catch (SQLException e) {
-            throw new RuntimeException("Erro ao inserir usuário...", e);
+            throw new RuntimeException("Erro ao inserir usuário!", e);
         }
     }
 }

@@ -33,7 +33,7 @@ public class User {
 
 	public void setName(String name) {
 		if(name == null || name.trim().isEmpty()) {
-			throw new IllegalArgumentException("Name Está vazio!");
+			throw new IllegalArgumentException("Nome Está vazio!");
 		}
 		this.name = name;
 	}
